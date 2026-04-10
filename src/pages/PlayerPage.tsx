@@ -30,7 +30,8 @@ export default function PlayerPage() {
   }, []);
 
   const goBack = () => {
-    window.location.hash = '#/';
+    window.location.href = import.meta.env.BASE_URL + '#/';
+    window.location.reload();
   };
 
   return (
